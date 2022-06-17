@@ -202,55 +202,58 @@ Possible error, [issue opened](https://github.com/IBM/xmlservice/issues/60)
      D                 PR            10I 0 extproc('Qp0sEnableSignals')
 ```
 
-* [_C_sig_err](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* **signal**, **\_C\_sig\_err**, **\_C\_sig\_dfl** and **\_C\_sig\_ign**
+
+#### Using the C/C++ Signal Handler
+
+HLL-specific handlers are the language features that are defined for handling errors. The ILE C/C++ signal() function can be used to handle exception messages.
+
+iSeries system exceptions are mapped to C and C++ signals by the ILE C/C++ run-time environment. A signal handler determines the course of action for a signal. You cannot register a signal handler in an activation group that is different from the one you wish to call it from. If a signal handler is in a different activation group from the occurrence of the signal it is handling, the behavior is undefined.
+
+Exception handler priority becomes important if you use both language-specific error handling (C signal) and additional ILE exception handler types.
+
+```
+     D signal          PR              *   procptr
+     D                                     extproc('signal')
+```
 
 ```
      D C_sig_err       PR                  extproc('_C_sig_err')
-```
-
-* [_C_sig_dfl](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
-
-```
      D C_sig_dfl       PR                  extproc('_C_sig_dfl')
-```
-
-* [_C_sig_ign](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
-
-```
      D C_sig_ign       PR                  extproc('_C_sig_ign')
 ```
 
-* [sigaction](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigaction](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigactn.htm)
 
 ```
      D sigaction       PR                  extproc('sigaction')
 ```
 
-* [sigaddset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigaddset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigaset.htm)
 
 ```
      D sigaddset       PR            10I 0 extproc('sigaddset')
 ```
 
-* [sigdelset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigdelset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigdset.htm)
 
 ```
      D sigdelset       PR            10I 0 extproc('sigdelset')
 ```
 
-* [sigemptyset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigemptyset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigeset.htm)
 
 ```
      D sigemptyset     PR            10I 0 extproc('sigemptyset')
 ```
 
-* [sigfillset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigfillset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigfset.htm)
 
 ```
      D sigfillset      PR            10I 0 extproc('sigfillset')
 ```
 
-* [sigismember](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigismember](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigismbr.htm)
 
 ```
      D sigismember     PR            10I 0 extproc('sigismember')
@@ -259,28 +262,27 @@ Possible error, [issue opened](https://github.com/IBM/xmlservice/issues/60)
 * [signal](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
-     D                                     extproc('signal')
 ```
 
-* [sigpending](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigpending](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigpend.htm)
 
 ```
      D sigpending      PR            10I 0 extproc('sigpending')
 ```
 
-* [sigprocmask](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigprocmask](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigpmsk.htm)
 
 ```
      D sigprocmask     PR            10I 0 extproc('sigprocmask')
 ```
 
-* [sigsuspend](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigsuspend](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigsusp.htm)
 
 ```
      D sigsuspend      PR            10I 0 extproc('sigsuspend')
 ```
 
-* [sigwait](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigwait](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigwait.htm)
 
 ```
      D sigwait         PR            10I 0 extproc('sigwait')
