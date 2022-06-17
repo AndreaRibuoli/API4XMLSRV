@@ -204,6 +204,8 @@ Possible error, [issue opened](https://github.com/IBM/xmlservice/issues/60)
 
 * **signal**, **\_C\_sig\_err**, **\_C\_sig\_dfl** and **\_C\_sig\_ign**
 
+( excerpts from *ILE C/C++ Programmer's Guide* )
+
 #### Using the C/C++ Signal Handler
 
 HLL-specific handlers are the language features that are defined for handling errors. The ILE C/C++ signal() function can be used to handle exception messages.
