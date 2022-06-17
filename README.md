@@ -98,53 +98,80 @@ API used by XMLSERVICE
 
 ## PLUGPASE.RPGLE     
 
+
+* [Qp2RunPase](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2runpase.htm)       
+
 ```
      D Qp2RunPase      PR            10I 0 extproc('Qp2RunPase')
 ```
+
+* [Qp2malloc](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2malloc.htm)    
 
 ```
      D Qp2malloc       PR              *   extproc('Qp2malloc')
 ```
 
+* [Qp2free](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2free.htm)       
+
 ```
      D Qp2free         PR                  extproc('Qp2free')
 ```
+
+* [Qp2dlopen](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2dlopen.htm) 
 
 ```
      D Qp2dlopen       PR            20U 0 extproc('Qp2dlopen')
 ```
 
+* [Qp2dlsym](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2dlsym.htm)
+
 ```
      D Qp2dlsym        PR              *   extproc('Qp2dlsym')
 ```
+
+* [Qp2CallPase](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2callpase.htm)
 
 ```
      D Qp2CallNow      PR            10I 0 extproc('Qp2CallPase')
 ```
 
+* [Qp2EndPase](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2endpase.htm)    
+
 ```
      D Qp2EndPase      PR            10I 0 extproc('Qp2EndPase')
 ```
+
+* [Qp2SignalPase](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2signalpase.htm)  
 
 ```
      D                 PR            10I 0 extproc('Qp2SignalPase')
 ```
 
+* [Qp2errnop](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2errnop.htm) 
+
 ```
      D Qp2errnop       PR              *   extproc('Qp2errnop')
 ```
+
+* [Qp2paseCCSID](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2paseccsid.htm)   
 
 ```
      D                 PR            10I 0 extproc('Qp2paseCCSID')
 ```
 
+* [Qp2jobCCSID](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2jobccsid.htm)      
+
 ```
      D                 PR            10I 0 extproc('Qp2jobCCSID')
 ```
 
+* [Qp2ptrsize](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/apis/qp2ptrsize.htm)         
+
 ```
      D Qp2ptrsize      PR            10I 0 extproc('Qp2ptrsize')
 ```
+
+
 
 ## PLUGSIG_H.RPGLE
 
