@@ -179,21 +179,49 @@ API used by XMLSERVICE
 
 ## PLUGSIG_H.RPGLE
 
+### USED (PLUGSIG.RPGLE only)
 
-* [alarm](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [sigaction](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigactn.htm) PLUGSIG.RPGLE
+
+```
+     D sigaction       PR                  extproc('sigaction')
+```
+
+* [sigaddset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigaset.htm) PLUGSIG.RPGLE
+
+```
+     D sigaddset       PR            10I 0 extproc('sigaddset')
+```
+
+* [sigemptyset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigeset.htm) PLUGSIG.RPGLE
+
+```
+     D sigemptyset     PR            10I 0 extproc('sigemptyset')
+```
+
+* [setitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/setitime.htm) PLUGSIG.RPGLE
+
+```
+     D setitimer       PR            10I 0 extproc('setitimer')
+```
+
+
+### NOT USED
+
+* [alarm](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigalarm.htm) *NOT USED*
 
 ```
      D alarm           PR            10U 0 extproc('alarm')
 ```
 
-* [Qp0sEnableSignals](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigesig.htm)
+* [Qp0sEnableSignals](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigesig.htm) *NOT USED*
 
 ```
      D Qp0sEnableSignals...
      D                 PR            10I 0 extproc('Qp0sEnableSignals')
 ```
 
-* [Qp0sDisableSignals](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigdsig.htm)
+* [Qp0sDisableSignals](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigdsig.htm) *NOT USED*
 
 Possible error, [issue opened](https://github.com/IBM/xmlservice/issues/60)
 
@@ -202,7 +230,7 @@ Possible error, [issue opened](https://github.com/IBM/xmlservice/issues/60)
      D                 PR            10I 0 extproc('Qp0sEnableSignals')
 ```
 
-* **signal**, **\_C\_sig\_err**, **\_C\_sig\_dfl** and **\_C\_sig\_ign**
+* **signal**, **\_C\_sig\_err**, **\_C\_sig\_dfl** and **\_C\_sig\_ign** *NOT USED*
 
 ( excerpts from *ILE C/C++ Programmer's Guide* )
 
@@ -225,79 +253,56 @@ Exception handler priority becomes important if you use both language-specific e
      D C_sig_ign       PR                  extproc('_C_sig_ign')
 ```
 
-* [sigaction](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigactn.htm)
 
-```
-     D sigaction       PR                  extproc('sigaction')
-```
-
-* [sigaddset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigaset.htm)
-
-```
-     D sigaddset       PR            10I 0 extproc('sigaddset')
-```
-
-* [sigdelset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigdset.htm)
+* [sigdelset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigdset.htm) *NOT USED*
 
 ```
      D sigdelset       PR            10I 0 extproc('sigdelset')
 ```
 
-* [sigemptyset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigeset.htm)
-
-```
-     D sigemptyset     PR            10I 0 extproc('sigemptyset')
-```
-
-* [sigfillset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigfset.htm)
+* [sigfillset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigfset.htm) *NOT USED*
 
 ```
      D sigfillset      PR            10I 0 extproc('sigfillset')
 ```
 
-* [sigismember](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigismbr.htm)
+* [sigismember](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigismbr.htm) *NOT USED*
 
 ```
      D sigismember     PR            10I 0 extproc('sigismember')
 ```
 
-* [sigpending](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigpend.htm)
+* [sigpending](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigpend.htm) *NOT USED*
 
 ```
      D sigpending      PR            10I 0 extproc('sigpending')
 ```
 
-* [sigprocmask](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigpmsk.htm)
+* [sigprocmask](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigpmsk.htm) *NOT USED*
 
 ```
      D sigprocmask     PR            10I 0 extproc('sigprocmask')
 ```
 
-* [sigsuspend](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigsusp.htm)
+* [sigsuspend](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigsusp.htm) *NOT USED*
 
 ```
      D sigsuspend      PR            10I 0 extproc('sigsuspend')
 ```
 
-* [sigwait](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigwait.htm)
+* [sigwait](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigwait.htm) *NOT USED*
 
 ```
      D sigwait         PR            10I 0 extproc('sigwait')
 ```
 
-* [setitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/setitime.htm)
-
-```
-     D setitimer       PR            10I 0 extproc('setitimer')
-```
-
-* [getitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/getitime.htm)
+* [getitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/getitime.htm) *NOT USED*
 
 ```
      D getitimer       PR            10I 0 extproc('getitimer')
 ```
 
-* [sigtimedwait](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigtwait.htm)
+* [sigtimedwait](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigtwait.htm) *NOT USED*
 
 ```
      D sigtimedwait    PR            10I 0 extproc('sigtimedwait')
