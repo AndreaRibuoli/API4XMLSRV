@@ -185,12 +185,16 @@ API used by XMLSERVICE
 * [Qp0sEnableSignals](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigesig.htm)
 
 ```
+     D Qp0sEnableSignals...
      D                 PR            10I 0 extproc('Qp0sEnableSignals')
 ```
 
 * [Qp0sDisableSignals](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigdsig.htm)
 
+Possible error, [issue opened](https://github.com/IBM/xmlservice/issues/60)
+
 ```
+     D Qp0sDisableSignals...
      D                 PR            10I 0 extproc('Qp0sEnableSignals')
 ```
 
