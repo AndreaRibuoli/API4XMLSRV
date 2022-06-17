@@ -261,11 +261,6 @@ Exception handler priority becomes important if you use both language-specific e
      D sigismember     PR            10I 0 extproc('sigismember')
 ```
 
-* [signal](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
-
-```
-```
-
 * [sigpending](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigpend.htm)
 
 ```
