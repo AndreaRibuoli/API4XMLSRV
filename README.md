@@ -175,81 +175,122 @@ API used by XMLSERVICE
 
 ## PLUGSIG_H.RPGLE
 
+
+* [alarm](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D alarm           PR            10U 0 extproc('alarm')
 ```
 
-```
-     D                 PR            10I 0 extproc('Qp0sEnableSignals')
-```
+* [Qp0sEnableSignals](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigesig.htm)
 
 ```
      D                 PR            10I 0 extproc('Qp0sEnableSignals')
 ```
+
+* [Qp0sDisableSignals](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigdsig.htm)
+
+```
+     D                 PR            10I 0 extproc('Qp0sEnableSignals')
+```
+
+* [_C_sig_err](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
      D C_sig_err       PR                  extproc('_C_sig_err')
 ```
 
+* [_C_sig_dfl](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D C_sig_dfl       PR                  extproc('_C_sig_dfl')
 ```
+
+* [_C_sig_ign](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
      D C_sig_ign       PR                  extproc('_C_sig_ign')
 ```
 
+* [sigaction](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D sigaction       PR                  extproc('sigaction')
 ```
+
+* [sigaddset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
      D sigaddset       PR            10I 0 extproc('sigaddset')
 ```
 
+* [sigdelset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D sigdelset       PR            10I 0 extproc('sigdelset')
 ```
+
+* [sigemptyset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
      D sigemptyset     PR            10I 0 extproc('sigemptyset')
 ```
 
+* [sigfillset](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D sigfillset      PR            10I 0 extproc('sigfillset')
 ```
+
+* [sigismember](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
      D sigismember     PR            10I 0 extproc('sigismember')
 ```
 
+* [signal](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D                                     extproc('signal')
 ```
+
+* [sigpending](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
      D sigpending      PR            10I 0 extproc('sigpending')
 ```
 
+* [sigprocmask](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D sigprocmask     PR            10I 0 extproc('sigprocmask')
 ```
+
+* [sigsuspend](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
      D sigsuspend      PR            10I 0 extproc('sigsuspend')
 ```
 
+* [sigwait](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D sigwait         PR            10I 0 extproc('sigwait')
 ```
+
+* [setitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
 
 ```
      D setitimer       PR            10I 0 extproc('setitimer')
 ```
 
+* [getitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+
 ```
      D getitimer       PR            10I 0 extproc('getitimer')
 ```
+
+* [sigtimedwait](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/sigtwait.htm)
 
 ```
      D sigtimedwait    PR            10I 0 extproc('sigtimedwait')
