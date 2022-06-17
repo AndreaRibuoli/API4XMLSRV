@@ -69,19 +69,19 @@ API used by XMLSERVICE
      D semop           PR            10I 0 extproc('semop')
 ```
 
-* [_CALLPGMV](https://www.ibm.com/docs/en/i/7.4?topic=instructions-call-program-variable-length-argument-list-callpgmv
+* [_CALLPGMV](https://www.ibm.com/docs/en/i/7.4?topic=instructions-call-program-variable-length-argument-list-callpgmv)
 
 ```
      D callpgmv        PR                  extproc('_CALLPGMV')
 ```
 
-* [_CPYBWP](https://www.ibm.com/docs/en/i/7.4?topic=instructions-copy-bytes-pointers-cpybwp
+* [_CPYBWP](https://www.ibm.com/docs/en/i/7.4?topic=instructions-copy-bytes-pointers-cpybwp)
 
 ```
      D cpybwp          PR                  extproc('_CPYBWP')
 ```
 
-* [_CMPSWP4](https://www.ibm.com/docs/en/i/7.4?topic=instructions-compare-swap-cmpsw
+* [_CMPSWP4](https://www.ibm.com/docs/en/i/7.4?topic=instructions-compare-swap-cmpsw)
 
 
 ```
