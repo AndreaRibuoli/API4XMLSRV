@@ -102,6 +102,7 @@ API used by XMLSERVICE
 
 ## PLUGPASE.RPGLE     
 
+### USED (PLUGPASE.RPGLE only)
 
 * [Qp2RunPase](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/qp2runpase.htm)       
 
@@ -113,12 +114,6 @@ API used by XMLSERVICE
 
 ```
      D Qp2malloc       PR              *   extproc('Qp2malloc')
-```
-
-* [Qp2free](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/qp2free.htm)       
-
-```
-     D Qp2free         PR                  extproc('Qp2free')
 ```
 
 * [Qp2dlopen](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/qp2dlopen.htm) 
@@ -135,8 +130,17 @@ API used by XMLSERVICE
 
 * [Qp2CallPase](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/qp2callpase.htm)
 
+Note that **Qp2CallPase** is remapped into *Qp2CallNow* and a local *Qp2CallPase* function
+is defined that uses *Qp2CallNow* (and so the API). 
+
 ```
      D Qp2CallNow      PR            10I 0 extproc('Qp2CallPase')
+```
+
+* [Qp2free](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/qp2free.htm)      
+
+```
+     D Qp2free         PR                  extproc('Qp2free')
 ```
 
 * [Qp2EndPase](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/qp2endpase.htm)    
