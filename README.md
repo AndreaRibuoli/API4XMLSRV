@@ -88,9 +88,13 @@ API used by XMLSERVICE
      D CMPSWP4         PR            10I 0 extproc('_CMPSWP4')
 ```
 
+* [QtqIconvOpen](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/QTQICONV.htm)
+
 ```
      D iconvOpen       PR                  extproc('QtqIconvOpen')
 ```
+
+* [iconv_close](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/iconvcls.htm)
 
 ```
      D iconvClose      PR                  extproc('iconv_close')
@@ -282,13 +286,13 @@ Possible error, [issue opened](https://github.com/IBM/xmlservice/issues/60)
      D sigwait         PR            10I 0 extproc('sigwait')
 ```
 
-* [setitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [setitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/setitime.htm)
 
 ```
      D setitimer       PR            10I 0 extproc('setitimer')
 ```
 
-* [getitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/.htm)
+* [getitimer](https://www.ibm.com/docs/en/i/7.4?topic=ssw_ibm_i_74/apis/getitime.htm)
 
 ```
      D getitimer       PR            10I 0 extproc('getitimer')
