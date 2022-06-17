@@ -100,6 +100,16 @@ API used by XMLSERVICE
      D iconvClose      PR                  extproc('iconv_close')
 ```
 
+### NOT USED
+
+* [_CMPSWP4](https://www.ibm.com/docs/en/i/7.4?topic=instructions-compare-swap-cmpsw)
+
+
+```
+     D CMPSWP4         PR            10I 0 extproc('_CMPSWP4')
+```
+
+
 ## PLUGPASE.RPGLE     
 
 ### USED (PLUGPASE.RPGLE only)
