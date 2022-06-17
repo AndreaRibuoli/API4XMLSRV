@@ -90,6 +90,9 @@ API used by XMLSERVICE
 
 ```
      D iconvOpen       PR                  extproc('QtqIconvOpen')
+```
+
+```
      D iconvClose      PR                  extproc('iconv_close')
 ```
 
@@ -97,16 +100,49 @@ API used by XMLSERVICE
 
 ```
      D Qp2RunPase      PR            10I 0 extproc('Qp2RunPase')
+```
+
+```
      D Qp2malloc       PR              *   extproc('Qp2malloc')
+```
+
+```
      D Qp2free         PR                  extproc('Qp2free')
+```
+
+```
      D Qp2dlopen       PR            20U 0 extproc('Qp2dlopen')
+```
+
+```
      D Qp2dlsym        PR              *   extproc('Qp2dlsym')
+```
+
+```
      D Qp2CallNow      PR            10I 0 extproc('Qp2CallPase')
+```
+
+```
      D Qp2EndPase      PR            10I 0 extproc('Qp2EndPase')
+```
+
+```
      D                 PR            10I 0 extproc('Qp2SignalPase')
+```
+
+```
      D Qp2errnop       PR              *   extproc('Qp2errnop')
+```
+
+```
      D                 PR            10I 0 extproc('Qp2paseCCSID')
+```
+
+```
      D                 PR            10I 0 extproc('Qp2jobCCSID')
+```
+
+```
      D Qp2ptrsize      PR            10I 0 extproc('Qp2ptrsize')
 ```
 
@@ -114,23 +150,80 @@ API used by XMLSERVICE
 
 ```
      D alarm           PR            10U 0 extproc('alarm')
+```
+
+```
      D                 PR            10I 0 extproc('Qp0sEnableSignals')
+```
+
+```
      D                 PR            10I 0 extproc('Qp0sEnableSignals')
+```
+
+```
      D C_sig_err       PR                  extproc('_C_sig_err')
+```
+
+```
      D C_sig_dfl       PR                  extproc('_C_sig_dfl')
+```
+
+```
      D C_sig_ign       PR                  extproc('_C_sig_ign')
+```
+
+```
      D sigaction       PR                  extproc('sigaction')
+```
+
+```
      D sigaddset       PR            10I 0 extproc('sigaddset')
+```
+
+```
      D sigdelset       PR            10I 0 extproc('sigdelset')
+```
+
+```
      D sigemptyset     PR            10I 0 extproc('sigemptyset')
+```
+
+```
      D sigfillset      PR            10I 0 extproc('sigfillset')
+```
+
+```
      D sigismember     PR            10I 0 extproc('sigismember')
+```
+
+```
      D                                     extproc('signal')
+```
+
+```
      D sigpending      PR            10I 0 extproc('sigpending')
+```
+
+```
      D sigprocmask     PR            10I 0 extproc('sigprocmask')
+```
+
+```
      D sigsuspend      PR            10I 0 extproc('sigsuspend')
+```
+
+```
      D sigwait         PR            10I 0 extproc('sigwait')
+```
+
+```
      D setitimer       PR            10I 0 extproc('setitimer')
+```
+
+```
      D getitimer       PR            10I 0 extproc('getitimer')
+```
+
+```
      D sigtimedwait    PR            10I 0 extproc('sigtimedwait')
 ```
